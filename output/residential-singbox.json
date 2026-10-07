@@ -5,7 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+      "tag": "🇫🇷 法国 (France) 01 (家宽) - xiaohe",
+      "server": "185.193.29.123",
+      "server_port": 443,
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
+      "tls": {
+        "enabled": true,
+        "server_name": "notls.lukongtou.eu.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
       "server": "104.20.36.205",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
@@ -24,26 +43,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "f7ff2e67-b687-4098-a28a-d102c27ba19c",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe"
+        "🇫🇷 法国 (France) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe"
+        "🇫🇷 法国 (France) 01 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

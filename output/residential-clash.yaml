@@ -4,7 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+- name: 🇫🇷 法国 (France) 01 (家宽) - xiaohe
+  server: 185.193.29.123
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: 104.20.36.205
   port: 443
   udp: true
@@ -18,25 +32,36 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  server: 129.151.64.169
+  port: 31867
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  - 🇫🇷 法国 (France) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
+  - 🇫🇷 法国 (France) 01 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
