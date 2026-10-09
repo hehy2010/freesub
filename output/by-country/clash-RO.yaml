@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.108
+  server: 77.74.123.102
   port: 8443
   udp: true
   type: hysteria2
@@ -13,18 +13,18 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaohe
-  server: 46.183.16.4
-  port: 2087
+  server: 46.28.67.55
+  port: 443
   udp: true
   type: vless
-  uuid: 69d76969-4c52-40f5-ac1d-303571634362
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
   tls: true
-  servername: ro1.b0w.ir
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
